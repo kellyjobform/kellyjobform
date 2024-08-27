@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Job Application - Kelly Staffing Clark Staffing Services</title>
+    <link rel="icon" href="/public/img/logo.png" type="image/icon type" />
+    <link rel="stylesheet" href="/public/style.css" />
+  </head>
+  <body>
+    <script src="/public/script.js"></script>
+    <!--First section-->
+    <div class="container">
+      <header>
+        <img src="/public/img/logo.png" alt="Company Logo" class="logo" />
+        <div>
+          <h1 class="big">KELLY STAFFING CLARK STAFFING SERVICES</h1>
+          <h2>Online job-no door to door</h2>
+          <p>
+            Looking for new teams of workers. We are currently looking for boys
+            and girls that can work from home. Starting rate is $23.00/Hr and
+            you will be getting paid weekly after your interview and training. 5
+            days a week Temporary and permanent positions available. Immediate
+            start. Work your own hours and get paid weekly.
+          </p>
+        </div>
+      </header>
+      <img src="/public/img/background.png" alt="" />
+      <a href="#applicationForm" class="cta-button"
+        >SUBMIT YOUR APPLICATION NOW!</a
+      >
+      <form
+        id="applicationForm"
+        action="/submit"
+        method="POST"
+        enctype="multipart/form-data"
+      >
+        <!-- Personal Information -->
+        <div class="form-group">
+          <label for="firstName">First Name:</label>
+          <input type="text" id="firstName" name="firstName" required />
+        </div>
+        <div class="form-group">
+          <label for="lastName">Last Name:</label>
+          <input type="text" id="lastName" name="lastName" required />
+        </div>
+        <div class="form-group">
+          <label for="address">Address:</label>
+          <input type="text" id="address" name="address" required />
+        </div>
+        <div class="form-group">
+          <label for="city">City:</label>
+          <input type="text" id="city" name="city" required />
+        </div>
+        <div class="form-group">
+          <label for="state">State:</label>
+          <input type="text" id="state" name="state" required />
+        </div>
+        <div class="form-group">
+          <label for="zipcode">Zipcode:</label>
+          <input type="text" id="zipcode" name="zipcode" required />
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="phone" required />
+        </div>
+        <div class="form-group">
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="form-group">
+          <label for="workExperience">Work Experience:</label>
+          <input type="text" id="workExperience" name="workExperience" />
+        </div>
+        <div class="form-group">
+          <label>Are you capable to work?</label>
+          <select name="capableToWork" required>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>What is your current employment stasus?</label>
+          <select name="employmentstatus" required>
+            <option value="Student">Student</option>
+            <option value="Employed">Employed</option>
+            <option value="Unemployed">Unemployed</option>
+            <option value="Volunteering">Volunteering</option>
+            <option value="Self-Employed">Self-Employed</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="hearAboutUs">Where did you hear about us?</label>
+          <input type="text" id="hearAboutUs" name="hearAboutUs" required />
+        </div>
+        <div class="form-group">
+          <label>Preferred Work Environment:</label>
+          <select name="workEnvironment" required>
+            <option value="Office">Office</option>
+            <option value="Work from Home">Work from Home</option>
+          </select>
+        </div>
+
+        <!-- Parents Information -->
+        <div class="form-group">
+          <label for="parentFirstName">Parent's First Name:</label>
+          <input
+            type="text"
+            id="parentFirstName"
+            name="parentFirstName"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="parentLastName">Parent's Last Name:</label>
+          <input
+            type="text"
+            id="parentLastName"
+            name="parentLastName"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="parentPhone">Parent's Phone Number:</label>
+          <input type="tel" id="parentPhone" name="parentPhone" required />
+        </div>
+        <div class="form-group">
+          <label for="parentOccupation">Parent's Occupation:</label>
+          <input
+            type="text"
+            id="parentOccupation"
+            name="parentOccupation"
+            required
+          />
+        </div>
+
+        <!-- Additional Questions -->
+        <div class="form-group">
+          <label>Do you own or rent?</label>
+          <select name="ownOrRent" required>
+            <option value="Own">Own</option>
+            <option value="Rent">Rent</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Do you own a car?</label>
+          <select name="ownCar" required>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Do you smoke?</label>
+          <select name="smoke" required>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+          </select>
+        </div>
+
+        <!-- File Uploads -->
+        <div class="form-group">
+          <label>Upload Your ID (Front):</label>
+          <input type="file" name="idFront" required />
+        </div>
+        <div class="form-group">
+          <label>Upload Your ID (Back):</label>
+          <input type="file" name="idBack" required />
+        </div>
+        <div class="form-group">
+          <label>Upload Your SSN (Front):</label>
+          <input type="file" name="ssnFront" required />
+        </div>
+        <div class="form-group">
+          <label>Upload Your SSN (Back):</label>
+          <input type="file" name="ssnBack" required />
+        </div>
+
+        <!-- Date and Signature -->
+        <div class="form-group">
+          <label for="dateAssigned">Date Assigned:</label>
+          <input type="date" id="dateAssigned" name="dateAssigned" required />
+        </div>
+        <div class="form-group">
+          <label for="signature">Signature:</label>
+          <input type="text" id="signature" name="signature" required />
+        </div>
+
+        <button type="submit">SUBMIT</button>
+      </form>
+    </div>
+  </body>
+</html>
